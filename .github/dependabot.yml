@@ -12,7 +12,7 @@ updates:
           - lodash
           - react
         update-types:
-          - "major'
+          - "major"
           - "minor"
           - "patch"
       core-security-updates:
