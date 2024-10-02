@@ -11,21 +11,22 @@ updates:
         patterns:
           - lodash
           - react
-      others:
-        applies-to: version-updates
-        patterns:
-          - hot-formula-parser
-          
-  - package-ecosystem: npm
-    directory: "/javascript"
-    schedule:
-      interval: "daily"
-    groups:
+        update-types:
+          - "major'
+          - "minor"
+          - "patch"
       core-security-updates:
         applies-to: security-updates
         patterns:
           - lodash
           - react
+        update-types:
+          - "patch"
+          - "minor"
+      others:
+        applies-to: version-updates
+        patterns:
+          - hot-formula-parser
       others-security-updates:
         applies-to: security-updates
         patterns:
