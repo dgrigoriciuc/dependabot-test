@@ -5,3 +5,10 @@ updates:
     directory: "/javascript"
     schedule:
       interval: "daily"
+    groups:
+      core:
+        patterns:
+          - lodash
+      others:
+        patterns:
+          - hot-formula-parser
