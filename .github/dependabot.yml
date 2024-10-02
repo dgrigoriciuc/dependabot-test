@@ -11,6 +11,7 @@ updates:
         patterns:
           - lodash
           - react
+          - dompurify
         update-types:
           - "minor"
           - "patch"
@@ -19,6 +20,7 @@ updates:
         patterns:
           - lodash
           - react
+          - dompurify
         update-types:
           - "major"
       others-security-updates:
