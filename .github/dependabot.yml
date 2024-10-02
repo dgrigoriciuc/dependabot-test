@@ -7,9 +7,20 @@ updates:
       interval: "daily"
     groups:
       core:
+        applies-to: version-updates
+        patterns:
+          - lodash
+          - react
+      core-security-updates:
+        applies-to: security-updates
         patterns:
           - lodash
           - react
       others:
+        applies-to: version-updates
+        patterns:
+          - hot-formula-parser
+      others-security-updates:
+        applies-to: security-updates
         patterns:
           - hot-formula-parser
