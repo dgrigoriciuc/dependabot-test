@@ -9,6 +9,7 @@ updates:
       core:
         patterns:
           - lodash
+          - react
       others:
         patterns:
           - hot-formula-parser
