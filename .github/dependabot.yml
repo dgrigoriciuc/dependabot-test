@@ -14,13 +14,13 @@ updates:
         update-types:
           - "minor"
           - "patch"
-      # core:
-      #   applies-to: version-updates
-      #   patterns:
-      #     - lodash
-      #     - react
-      #   update-types:
-      #     - "major"
+      core:
+        applies-to: version-updates
+        patterns:
+          - lodash
+          - react
+        update-types:
+          - "major"
       others-security-updates:
         applies-to: security-updates
         patterns:
