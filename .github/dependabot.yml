@@ -12,6 +12,7 @@ updates:
           - react
           - body-parser
           - dompurify
+          - bootstrap
         update-types:
           - 'minor'
           - 'patch'
@@ -21,6 +22,7 @@ updates:
           - react
           - body-parser
           - dompurify
+          - bootstrap
         update-types:
           - 'major'
 
