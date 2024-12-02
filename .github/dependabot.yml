@@ -6,6 +6,14 @@ updates:
     schedule:
       interval: 'daily'
     groups:
+      core:
+        applies-to: version-updates
+        patterns:
+          - react
+          - body-parser
+          - dompurify
+        update-types:
+          - 'major'
       core-security-updates:
         applies-to: security-updates
         patterns:
@@ -15,14 +23,6 @@ updates:
         update-types:
           - 'minor'
           - 'patch'
-      core:
-        applies-to: version-updates
-        patterns:
-          - react
-          - body-parser
-          - dompurify
-        update-types:
-          - 'major'
 
       others-security-updates:
         applies-to: security-updates
