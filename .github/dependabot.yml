@@ -6,6 +6,15 @@ updates:
     schedule:
       interval: 'weekly'
     groups:
+      core:
+        applies-to: version-updates
+        patterns:
+          - react
+          - body-parser
+          - dompurify
+          - bootstrap
+        update-types:
+          - 'major'
       core-security-updates:
         applies-to: security-updates
         patterns:
@@ -16,16 +25,13 @@ updates:
         update-types:
           - 'minor'
           - 'patch'
-      core:
+
+      others:
         applies-to: version-updates
         patterns:
-          - react
-          - body-parser
-          - dompurify
-          - bootstrap
+          - hot-formula-parser
         update-types:
           - 'major'
-
       others-security-updates:
         applies-to: security-updates
         patterns:
@@ -33,9 +39,3 @@ updates:
         update-types:
           - 'minor'
           - 'patch'
-      others:
-        applies-to: version-updates
-        patterns:
-          - hot-formula-parser
-        update-types:
-          - 'major'
