@@ -24,6 +24,12 @@ updates:
           - 'minor'
           - 'patch'
 
+      others:
+        applies-to: version-updates
+        patterns:
+          - hot-formula-parser
+        update-types:
+          - 'major'
       others-security-updates:
         applies-to: security-updates
         patterns:
@@ -31,9 +37,4 @@ updates:
         update-types:
           - 'minor'
           - 'patch'
-      others:
-        applies-to: version-updates
-        patterns:
-          - hot-formula-parser
-        update-types:
-          - 'major'
+      
