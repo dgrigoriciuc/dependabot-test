@@ -5,3 +5,35 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+    groups:
+      core-security-updates:
+        applies-to: security-updates
+        patterns:
+          - react
+          - body-parser
+          - dompurify
+        update-types:
+          - 'minor'
+          - 'patch'
+      core:
+        applies-to: version-updates
+        patterns:
+          - react
+          - body-parser
+          - dompurify
+        update-types:
+          - 'major'
+
+      others-security-updates:
+        applies-to: security-updates
+        patterns:
+          - hot-formula-parser
+        update-types:
+          - 'minor'
+          - 'patch'
+      others:
+        applies-to: version-updates
+        patterns:
+          - hot-formula-parser
+        update-types:
+          - 'major'
